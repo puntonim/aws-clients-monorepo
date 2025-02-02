@@ -82,8 +82,8 @@ To add a new requirement:
 $ poetry add requests
 $ poetry add pytest --dev  # Dev only.
 $ poetry add requests[security,socks]  # With extras.
-$ poetry add git+https://github.com/puntonim/strava-client  # From git.
-$ poetry add "git+https://github.com/puntonim/strava-client[aws-parameter-store]"  # From git with extras.
+$ poetry add git+https://github.com/puntonim/strava-monorepo#subdirectory=libs/strava-client  # From git.
+$ poetry add "git+https://github.com/puntonim/strava-monorepo#subdirectory=libs/strava-client[aws-parameter-store]"  # From git with extras.
 ```
 
 3 - Pre-commit
@@ -99,9 +99,9 @@ Deployment
 
 ---
 
-These utils are not deployed to PyPI.\
-See the individual `README.md` file in each util subdir to know how to install and use
- each util.
+These clients are not deployed to PyPI.\
+See the individual `README.md` file in each client subdir to know how to install and use
+ each client.
 
 
 Copyright
